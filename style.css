@@ -84,10 +84,26 @@ nav a.signin{
 	border:0;
 	
 }
-#mail{
+#mail1{
 	font-size:1rem;
 	width: 454px;
 	margin-left: 25%;
+	padding:20px 7em 20px 1em;
+	color: #fff;
+	background-color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: middle;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
+	border-radius: 2px;
+	text-align: left;
+	border:0;
+}
+
+
+#mail{
+	font-size:1rem;
+	width: 454px;
 	padding:20px 7em 20px 1em;
 	color: #fff;
 	background-color: #fff;
@@ -125,7 +141,8 @@ nav .signin:hover, .btn:hover{
 .card2,
 .card3,
 .last,
-.hello{
+.hello,
+.stefan{
 	border-top: 8px rgb(69,69,69)solid;
 	padding: 50px;
 }
@@ -184,7 +201,7 @@ nav .signin:hover, .btn:hover{
 }
 
 .questions li{
-	padding: 20px 30px;
+	padding: 10px 20px;
 	margin: 5px;
 	font-size: 1.6rem;
 	background-color: #303030;
@@ -196,10 +213,7 @@ nav .signin:hover, .btn:hover{
 .faq{
 	text-align: center;
 }
-.faq h1{
-	padding-bottom: 40px;
-	font-size:3rem;
-}
+
 
 .faq p{
 	padding-top: 60px;
@@ -236,5 +250,95 @@ nav .signin:hover, .btn:hover{
 
  .footer a:hover{
  	text-decoration: underline;
-
  }
+
+ .list-btn{
+	font-size:2rem;
+	padding-left: 28rem;
+	color: #fff;
+	background-color: #303030;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: right;
+	/*vertical-align: right;*/
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
+	border-radius: 5px;
+	border:0;	
+}
+
+
+.stefan{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.stefan h1{
+	color: #fff;
+	font-size: 3rem;
+	padding: 1rem 0 3rem 0;
+}
+
+.title{
+	background-color: #303030;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-weight: 400;
+	font-size: 1.7rem;
+	width: 60%;
+	text-decoration: none;
+}
+
+.icon{
+	width: 20px;
+	position: relative;
+}
+
+.icon::before,.icon::after{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 3px;
+	color: #fff;
+	top: -1.5px;
+}
+
+.icon::after{
+
+	transform: rotate(90deg);
+	transition: 0.5s linear;
+}
+
+.subtext{
+	background-color: #303030;
+	line-height: 35px;
+	margin: 3px 0;
+	font-weight: 400;
+	font-size: 1.7rem;
+	width: 60%;
+	text-decoration: none;
+	height: 0;
+	opacity: 0;
+}
+
+.item:target .subtext{
+	height: auto;
+	opacity: 1;
+	padding: 20px 30px;
+	margin: 0;
+	border-top: 2px solid #000;
+	margin-bottom: 6px;
+}
